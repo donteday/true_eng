@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap');
 
 .header {
     font-family: 'Montserrat', sans-serif;
@@ -18,8 +18,9 @@
     /* padding: 10px; */
 }
 
-.header__logo h2 {
-    font-weight: 700;
+.header__logo {
+    margin: 10px 0;
+    max-width: 100px;
 }
 
 .header__nav {
@@ -30,7 +31,7 @@
     position: relative;
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding: 40px;
     border-left: 1px solid white;
     text-transform: uppercase;
     font-size: 14px;
@@ -65,8 +66,8 @@
 .button {
     cursor: pointer;
     background-color: #fd5631;
-    width: 120px;
-    height: 50px;
+    width: 150px;
+    height: 70px;
     border: none;
     color: rgb(255, 255, 255);
     font-weight: 700;

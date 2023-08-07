@@ -1,0 +1,98 @@
+.services {
+    background-color: rgb(68, 68, 68);
+    padding: 40px 0;
+}
+
+.services__box {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 20px;
+}
+
+.services__header {
+    color: white;
+    text-align: left;
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 40px;
+    z-index: 5;
+}
+
+.services__item {
+    background-color: rgb(217, 216, 216);
+
+    position: relative;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+    margin: 20px 0;
+    color: rgb(68, 68, 68);
+    width: 400px;
+    height: 300px;
+}
+
+.services__item-name {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: right;
+    font-size: 26px;
+    height: 20px;
+}
+
+.services__item span {
+    position: absolute;
+    top: 0;
+    color: transparent;
+    font-weight: 900;
+    font-size: 100px;
+    -webkit-text-stroke: .5px #fd5631;
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 1;
+
+}
+
+.services__item-description {
+    margin-top: 90px;
+    text-align: justify;
+}
+
+.services__item-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    bottom: 0;
+    border: none;
+    background-color: #fd5631;
+    background-image: url('../../img/arrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.services__item-btn:hover {
+    width: 100%;
+    background-image: none;
+}
+
+.services__item-btn::before {
+    content: 'ПОДРОБНЕЕ';
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.services__item-btn:hover::before {
+    opacity: 1;
+
+}

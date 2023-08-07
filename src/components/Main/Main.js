@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <main className='main'>
             <div className='main__container'>
-                <h2 className='main__head'>Мы - компания с широким спектром услуг в области строительства и девелопмента:</h2>
+                <h2 className='main__head'><b>TRUE ENGINEERS</b> - компания с широким спектром услуг в области строительства и девелопмента:</h2>
                 <div className='main__services-container'>
                     {services.map((e, index) => {
                         return (
