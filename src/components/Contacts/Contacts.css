@@ -22,7 +22,7 @@
 
 .contacts__img {
     width: 200px;
-    border-radius: 50%;
+    border-radius: 80% 40%;
 }
 
 .contacts__info {
