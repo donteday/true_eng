@@ -63,21 +63,15 @@
 }
 
 
-.button {
+.header__tg {
     cursor: pointer;
+    background-image: url('../../img/tg_icon.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #fd5631;
-    width: 150px;
+    width: 70px;
     height: 70px;
-    border: none;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    text-transform: uppercase;
     border-left: 1px solid white;
     border-right: 1px solid white;
-}
-
-.button:hover {
-    background-color: rgb(255, 255, 255);
-    transition: all .4s ease-in-out;
-    color: black;
 }

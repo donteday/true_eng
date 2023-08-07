@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  --main-orange-color: #fd5631;;
 }
 
 body {
@@ -9,7 +11,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(217, 216, 216);
+  /* background-color: rgb(217, 216, 216); */
+  background-color: #f8f8fa;
   color: rgb(68, 68, 68);
   overflow-x: hidden;
 }

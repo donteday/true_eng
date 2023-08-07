@@ -11,16 +11,16 @@ const About = () => {
                         <p>лет опыта</p>
                     </div>
                     <div className="about__section">
-                        <span>120+</span>
+                        <span>256+</span>
                         <p>проектов</p>
                     </div>
                     <div className="about__section">
-                        <span>24+</span>
-                        <p>сотрудника</p>
+                        <span>12+</span>
+                        <p>сотрудников</p>
                     </div>
                     <button className="about__btn">
                         <img className="about__btn-img" src={require(`../../img/arrow.png`)} alt=""/>
-                        подробнее</button>
+                        ОСТАВИТЬ <br /> ЗАЯВКУ</button>
                 </div>
             </div>
         </div>

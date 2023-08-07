@@ -1,18 +1,21 @@
 import './Header.css';
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <header className="header">
             <div className='header__container'>
-                <img className="header__logo" src={require('../../img/logo_light.png')} alt="logo" srcset="" />
+                <NavLink href="/">
+                    <img className="header__logo" src={require('../../img/logo_light.png')} alt="logo" srcset="" />
+                </NavLink>
                 <nav className="header__nav">
-                    <a className="header__nav-link" href="s">Услуги</a>
+                    <a href="/#services" className="header__nav-link" >Услуги</a>
                     <a className="header__nav-link" href="s">О Компании</a>
                     <a className="header__nav-link" href="s">Наши проекты</a>
                     <a className="header__nav-link" href="s">Контакты</a>
                 </nav>
-                <button className='button'>Оставить заявку</button>
+                <a href='https://t.me/sarserega' className='header__tg' target='blank'> </a>
             </div>
 
         </header>

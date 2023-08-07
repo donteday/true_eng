@@ -22,6 +22,8 @@ const Main = () => {
                     })}
                 </div>
             </div>
+
+            {/* <a className='main__btn' href='c'>ОСТАВИТЬ ЗАЯВКУ</a> */}
         </main>
     );
 }
