@@ -20,6 +20,11 @@ const contacts = [
 const Contacts = () => {
     return (<div className='container'>
         <span className='contacts__header'>Контакты</span>
+        <div className='contacts__mail'>
+        <span >email: true@engineers.com</span>
+        <span >телефон:  +79168334599</span>
+        </div>
+        <span className='contacts__header'>Наша команда</span>
 
         <div className='contacts__box'>
             {contacts.map((e, index) =>

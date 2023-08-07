@@ -12,6 +12,16 @@
     font-size: 36px;
 }
 
+.contacts__mail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contacts__mail span {
+    font-size: 24px;
+}
+
 .contacts {
     display: flex;
     flex-direction: column;
@@ -22,7 +32,12 @@
 
 .contacts__img {
     width: 200px;
-    border-radius: 80% 40%;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.contacts__img:hover {
+    border-radius: 0;
 }
 
 .contacts__info {
