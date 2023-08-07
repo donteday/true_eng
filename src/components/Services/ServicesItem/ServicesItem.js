@@ -30,12 +30,12 @@ const services = [
 ]
 const ServicesItem = () => {
     return (
-        <div className='sevices-item'>
+        <div className='sevice'>
             <div className='container'>
                 <span className='sevices__header'>ПРОЕКТИРОВАНИЕ</span>
 
                 {services[0].map((e, index) =>
-                    <div className='sevices__item'>
+                    <div className='sevice-item'>
                         <h3 className='sevices__item-header'>{e.header}</h3>
                         <hr />
                         <p className='sevices__description'>{e.description}</p>

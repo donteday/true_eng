@@ -12,6 +12,7 @@ import Services from './components/Services/Services';
 import Main from './components/Main/Main';
 import About from './components/About/About';
 import ServicesItem from './components/Services/ServicesItem/ServicesItem';
+import Contacts from './components/Contacts/Contacts';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
           <About />
           <Services />
         </>,
+      },
+      {
+        path: "contacts",
+        element: <Contacts/>,
       },
       {
         path: "consult",
