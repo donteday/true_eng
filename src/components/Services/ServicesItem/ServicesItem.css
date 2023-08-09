@@ -66,6 +66,6 @@
     }
 
     .sevice__item-input:checked ~ .sevices__item-description{
-        height: 140px;
+        height: 200px;
     }
 }

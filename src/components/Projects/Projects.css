@@ -25,6 +25,9 @@
     height: 1200px;
     width: 500px;
     overflow-y: auto;
+    overflow-x: scroll;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
     border-left: 1px solid var(--main-gray-color);
     border-right: 1px solid var(--main-gray-color);
 }
