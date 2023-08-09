@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  --main-orange-color: #fd5631;;
+  --main-orange-color: #fd5631;
+  --main-gray-color: rgb(68, 68, 68);
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -11,10 +16,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgb(217, 216, 216); */
   background-color: #f8f8fa;
   color: rgb(68, 68, 68);
   overflow-x: hidden;
+  min-height: 100vh;
+
 }
 
 .container {

@@ -18,11 +18,12 @@ const contacts = [
 ]
 
 const Contacts = () => {
-    return (<div className='container'>
+    return (
+    <div className='container contacts__container'>
         <span className='contacts__header'>Контакты</span>
         <div className='contacts__mail'>
-        <span >email: true@engineers.com</span>
-        <span >телефон:  +79168334599</span>
+            <span >email: true@engineers.com</span>
+            <span >телефон:  +79168334599</span>
         </div>
         <span className='contacts__header'>Наша команда</span>
 

@@ -1,3 +1,7 @@
+.contacts__container {
+    width: 100%;
+}
+
 .contacts__box {
     display: flex;
     justify-content: space-around;

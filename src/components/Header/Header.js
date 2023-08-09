@@ -11,8 +11,8 @@ const Header = () => {
                 </NavLink>
                 <nav className="header__nav">
                     <a href="/#services" className="header__nav-link" >Услуги</a>
-                    <a className="header__nav-link" href="s">О Компании</a>
                     <a className="header__nav-link" href="s">Наши проекты</a>
+                    <a className="header__nav-link" href="s">Новости</a>
                     <Link to={'/contacts'} className="header__nav-link">Контакты</Link>
                 </nav>
                 <a href='https://t.me/true_engineers' className='header__tg' target='blank'> </a>

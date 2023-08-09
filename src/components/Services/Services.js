@@ -33,7 +33,7 @@ const Services = () => {
     return (
         <div className='services' id={'services'}>
             <div className='container'>
-            <span className='services__header'>УСЛУГИ</span>
+            <span className='services__header'>УСЛУГИ<hr /></span>
 
                 <div className='services__box'>
                     {services.map((e, index) => {

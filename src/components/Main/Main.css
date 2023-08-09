@@ -57,7 +57,7 @@
     width: 400px;
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: -1px;
     padding: 10px;
     border: .5px solid rgba(68, 68, 68, 0.153);
     backdrop-filter: blur(5px);

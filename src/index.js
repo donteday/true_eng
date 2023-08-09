@@ -13,6 +13,7 @@ import Main from './components/Main/Main';
 import About from './components/About/About';
 import ServicesItem from './components/Services/ServicesItem/ServicesItem';
 import Contacts from './components/Contacts/Contacts';
+import Projects from './components/Projects/Projects';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
           <Main />
           <About />
           <Services />
+          <Projects />
         </>,
       },
       {

@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--main-gray-color);
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+}
+
+.footer__link a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
