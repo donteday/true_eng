@@ -1,15 +1,18 @@
 .main {
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
 }
 
 .main::after {
     content: '';
     position: absolute;
-    width: 1000px;
+    display: block;
+    min-width: 1000px;
     height: 400px;
     border: 1px solid #fd5631;
-    bottom: 0;
+    bottom: 10%;
     left: 25%;
     transform: rotate(-20deg);
     border-radius: 50%;
@@ -83,6 +86,9 @@
 .main__services:hover {
     cursor: pointer;
     background-color: #fd563111;
+    transform: scale(1.05);
+    transform-origin: bottom;
+    z-index: 5;
 }
 
 .main__services span{
@@ -113,4 +119,58 @@
     /* margin-top: 60px; */
     padding: 20px;
     text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .main::after {
+        min-width: 400px;
+        height: 150px;
+        bottom: 40%;
+        left: 25%;
+    }
+
+    .main__container {
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .main__services-container{
+        padding-top: 20px;
+    }
+
+    .main__head {
+        max-width: 100%;
+    }
+
+    .main__services {
+        max-width: 100%;
+    }
+    
+    .main__services:nth-child(n+2) {
+        margin-right: 0;
+    }
+    .main__services:nth-child(n+3) {
+        margin-right: 0;
+    }
+    .main__services:nth-child(n+4) {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .main__head {
+        font-size: 20px;
+    }
+
+    .main__services {
+        width: 300px;
+
+    }
+
+    .main__services p {
+        font-size: 16px;
+    }
 }

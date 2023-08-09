@@ -2,7 +2,7 @@
     width: 100%;
     padding: 40px 0;
     height: 700px;
-
+    overflow: hidden;
 }
 
 .projects__header {

@@ -22,10 +22,21 @@
     text-decoration: none;
     color: white;
     margin-bottom: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.footer__link a:hover {
+    color: #fd5631;
 }
 
 .footer__contacts {
     display: flex;
     flex-direction: column;
     text-align: right;
+}
+
+@media (max-width: 375px) {
+    .footer__link a{
+        font-size: 10px;
+    }
 }

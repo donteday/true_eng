@@ -8,6 +8,7 @@
     /* flex-wrap: wrap; */
     justify-content: center;
     gap: 1px;
+    flex-wrap: wrap;
 }
 
 .services__header {
@@ -21,6 +22,7 @@
 }
 
 .services__item {
+    
     cursor: pointer;
     background-color: #f8f8fa;
     position: relative;
@@ -29,7 +31,7 @@
     text-align: left;
     margin: 20px 0;
     color: rgb(68, 68, 68);
-    width: 400px;
+    max-width: 295px;
     height: 300px;
     transition: all .3s ease-in-out;
 }
@@ -86,6 +88,7 @@
     text-transform: uppercase;
     transition: all .3s ease-in-out;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .services__item-btn:hover {

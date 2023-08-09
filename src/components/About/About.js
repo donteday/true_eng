@@ -20,7 +20,8 @@ const About = () => {
                     </div>
                     <button className="about__btn">
                         <img className="about__btn-img" src={require(`../../img/arrow.png`)} alt=""/>
-                        ОСТАВИТЬ <br /> ЗАЯВКУ</button>
+                        <span>ОСТАВИТЬ <br /> ЗАЯВКУ</span>
+                        </button>
                 </div>
             </div>
         </div>
