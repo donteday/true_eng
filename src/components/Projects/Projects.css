@@ -72,3 +72,9 @@
     text-align: left;
     margin: 5px 0;
 }
+
+@media (max-width: 768px) {
+    .projects__box {
+        height: 100vw;
+    }
+}
