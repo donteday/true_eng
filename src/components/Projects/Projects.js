@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Projects.css';
 
 const projectsArr = [
@@ -26,13 +27,13 @@ const Projects = () => {
             
             <div className='projects__box'>
                 {projectsArr.map((e, index) =>
-                    <div className='projects__item'>
+                    <Link to={`projects/${index}`} className='projects__item'>
                         <div className='projects__item-img'>
                             <img  src={require(`../../img/${e.img}`)} alt="" />
                         </div>
-                        <span className='projects__item-name'>{e.name}</span>
+                        <h3 to={`projects/${index}`} className='projects__item-name'>{e.name}</h3>
                         <p className='projects__item-title'>{e.title}</p>
-                    </div>
+                    </Link>
                 )
                 }
             </div>

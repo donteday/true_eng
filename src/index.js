@@ -14,6 +14,7 @@ import About from './components/About/About';
 import ServicesItem from './components/Services/ServicesItem/ServicesItem';
 import Contacts from './components/Contacts/Contacts';
 import Projects from './components/Projects/Projects';
+import ProjectPage from './components/Projects/ProjectPage/ProjectPage';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "consult",
         element: <ServicesItem />,
+      },
+      {
+        path: "projects/:projectId",
+        element: <ProjectPage />,
       },
     ]
   },

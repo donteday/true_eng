@@ -37,7 +37,8 @@
     /* transform-origin: right top; */
     border-right: 1px solid var(--main-gray-color);
     padding-right: 40px;
-
+    color: var(--main-gray-color);
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     width: 475px;
@@ -64,6 +65,8 @@
     text-align: left;
     margin: 5px 0;
     text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-gray-color);
 }
 
 .projects__item-title {

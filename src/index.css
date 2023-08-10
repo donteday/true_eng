@@ -28,6 +28,16 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background-color: var(--main-orange-color);
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -48,6 +48,10 @@ const ServicesItem = () => {
 
 
                     </div>)}
+
+                    <a href='https://forms.yandex.ru/cloud/64d4ded369387211d3f58ffa/' className="btn" target='blank'>
+                        ОСТАВИТЬ ЗАЯВКУ
+                    </a>
             </div>
         </div>
     );
