@@ -13,8 +13,9 @@ import Main from './components/Main/Main';
 import About from './components/About/About';
 import ServicesItem from './components/Services/ServicesItem/ServicesItem';
 import Contacts from './components/Contacts/Contacts';
-import Projects from './components/Projects/Projects';
+import ProjectsSlider from './components/Projects/ProjectsSlider/ProjectsSlider';
 import ProjectPage from './components/Projects/ProjectPage/ProjectPage';
+import Projects from './components/Projects/Projects';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
           <Main />
           <About />
           <Services />
-          <Projects />
+          <ProjectsSlider />
+          {/* <Projects /> */}
         </>,
       },
       {
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "projects/:projectId",
         element: <ProjectPage />,
+      },
+      {
+        path: "projects",
+        element: <Projects/>,
       },
     ]
   },

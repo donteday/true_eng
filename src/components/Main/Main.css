@@ -119,8 +119,12 @@
     /* margin-top: 60px; */
     padding: 20px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
+.main__btn:hover {
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
     .main::after {

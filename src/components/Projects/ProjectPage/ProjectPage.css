@@ -1,7 +1,7 @@
 .project-page {
     max-width: 1200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: flex-start;
 }
@@ -12,6 +12,7 @@
 }
 
 .project-page__img {
+    display: block;
     margin: 20px 0;
-    max-width: 100%;
+    max-width: 500px;
 }
