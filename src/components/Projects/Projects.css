@@ -17,6 +17,11 @@
     transition: all 0.3s ease-in-out;
 }
 
+.link__active {
+    text-decoration: underline #fd5631;
+
+}
+
 .projects__nav-link:hover {
     cursor: pointer;
     text-decoration: underline #fd5631;

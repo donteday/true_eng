@@ -38,7 +38,7 @@ const Projects = () => {
         <div>
             <div className="projects__nav">
                 {projectsType.map((e, index) =>
-                    <div className="projects__nav-link" onClick={() => switchType(e.type)}>
+                    <div className={`projects__nav-link ${e.type === currentType ? "link__active" : ""}`} onClick={() => switchType(e.type)}>
                         {e.transcription}
                     </div>
                 )}
