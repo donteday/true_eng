@@ -15,12 +15,12 @@ const ProjectPage = () => {
                     <h3 className="project-page__name">{project.name}</h3>
                     <p>{project.title}</p>
                 </div>
-                <img className="project-page__img" src={require(`../../../data/${project.id}/prew.jpg`)} alt="" />
+                <img className="project-page__img" src={require(`../../../data/${project.id}/prew.jpg`) } data-zoom-image={require(`../../../data/${project.id}/prew.jpg`) } alt="" />
             </div>
             <hr />
             <div className='project-page__grid'>
 
-                {project.photos.map((photo, index) =>
+                {project.photos?.map((photo, index) =>
                     <img className="project-page__photo" src={require(`../../../data/${project.id}/${photo}.png`)} alt="" />
 
                 )}

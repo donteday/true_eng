@@ -6,14 +6,27 @@
 
 }
 
+.projects__nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.projects__nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+.projects__nav-link:hover {
+    cursor: pointer;
+    text-decoration: underline #fd5631;
+}
+
 .projects__grid-box {
-    /* display: flex; */
-    /* align-items: center; */
-    /* width: 100%; */
-    /* height: 300px; */
+
     position: relative;
-    overflow: hidden;
-    
+    height: 300px;
+    overflow: hidden;    
 }
 
 .projects__preview {
@@ -41,6 +54,10 @@
  font-weight: 500;
  transition: all .3s ease-in-out;
  font-size: 20px;
+ padding: 5px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 
 .projects__grid-box:hover > .projects__name {

@@ -2,12 +2,11 @@ import { Link } from 'react-router-dom';
 import './ProjectsSlider.css';
 import { projectData } from "../../../data/ProjectsData";
 
-
-
-
+// console.log(/^node .*react-scripts\/scripts\/start\.js\s?$/);
 const ProjectsSlider = () => {
     return (
         <div className='container projects'>
+
             <span className='projects__header'>Проекты<hr /></span>
             <div className='projects__slider'>
                 <div className='projects__slider-arrow left'>-</div>
