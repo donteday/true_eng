@@ -3,20 +3,26 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 30px;
+    position: relative;
+
+
 }
 
 .main::after {
     content: '';
     position: absolute;
     display: block;
-    min-width: 1000px;
-    height: 400px;
-    border: 1px solid #fd5631;
-    bottom: 10%;
-    left: 25%;
-    transform: rotate(-20deg);
+    min-width: 1800px;
+    height: 800px;
+
+    border: 100px solid #fd5631;
+    bottom: 20%;
+    left: 30%;
+    transform: rotate(-20deg) skew(20deg);
+    /* transform: skew(20deg); */
     border-radius: 50%;
-    z-index: -1;
+    z-index: -3;
+    /* animation: rotator 5s linear infinite; */
 }
 
 .main::before {
@@ -30,7 +36,20 @@
     background: radial-gradient(circle, #fd5631 -210%, rgba(24, 24, 24, 0) 60%);
     z-index: -1;
 }
-
+.main__hat {
+    position: absolute;
+    margin-top: 100px;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    z-index: -2;
+    background-image: url('../../img/hat.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 75%;
+    filter: grayscale(100%);
+    /* opacity: 0.5; */
+}
 .main__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -65,6 +84,7 @@
     border: .5px solid rgba(68, 68, 68, 0.153);
     backdrop-filter: blur(5px);
     transition: all .4s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .main__services:nth-child(n+2) {
@@ -124,6 +144,28 @@
 
 .main__btn:hover {
     cursor: pointer;
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotate(0);
+        width: 800px;
+        height: 300px;
+
+    }
+
+    50% {
+        transform: rotate(90);
+        width: 800px;
+        height: 300px;
+
+    }
+
+    100% {
+        transform: rotate(180deg);
+        width: 800px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 768px) {

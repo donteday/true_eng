@@ -24,6 +24,10 @@ const projectsType = [
         type: 'calc',
         transcription: 'Расчеты'
     },
+    {
+        type: 'exp',
+        transcription: 'Экспертиза'
+    },
 ]
 
 
@@ -45,7 +49,7 @@ const Projects = () => {
             </div>
             <div className="projects__grid">
                 {projectData.map((e, index) =>
-                    currentType === e.type || currentType === 'all'?
+                    e.type.includes(currentType) || currentType === 'all'?
                         (<Link to={`/projects/${index}`} relative="path" className='projects__grid-box'>
                             <img className="projects__preview" src={require(`../../data/${e.id}/prew.jpg`)} alt="" />
                             <div className="projects__name">{e.name}</div>
