@@ -170,10 +170,10 @@
 
 @media (max-width: 768px) {
     .main::after {
-        min-width: 400px;
-        height: 150px;
+        min-width: 800px;
+        height: 600px;
         bottom: 40%;
-        left: 25%;
+        left: 15%;
     }
 
     .main__container {

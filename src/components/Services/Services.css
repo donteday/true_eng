@@ -1,5 +1,5 @@
 .services {
-    background-color: rgb(68, 68, 68);
+    background-color: var(--main-gray-color);
     padding: 40px 0;
 }
 

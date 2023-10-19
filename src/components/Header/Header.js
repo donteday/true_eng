@@ -12,7 +12,7 @@ const Header = () => {
                 <nav className="header__nav">
                     <a href="/#services" className="header__nav-link" >Услуги</a>
                     <Link to={'/projects'} relative="path" className="header__nav-link" >проекты</Link>
-                    <a className="header__nav-link" href="s">Новости</a>
+                    <a className="header__nav-link" href="#">Новости</a>
                     <Link to={'/contacts'} className="header__nav-link">Контакты</Link>
                 </nav>
                 <a href='https://t.me/true_engineers' className='header__tg' target='blank'> </a>

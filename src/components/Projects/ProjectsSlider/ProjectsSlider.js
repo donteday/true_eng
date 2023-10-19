@@ -4,6 +4,8 @@ import { projectData } from "../../../data/ProjectsData";
 
 // console.log(/^node .*react-scripts\/scripts\/start\.js\s?$/);
 const ProjectsSlider = () => {
+    function moveTo() {window.scrollTo(0, 0)};
+
     return (
         <div className='container projects'>
 
@@ -27,7 +29,8 @@ const ProjectsSlider = () => {
                 <div className='projects__slider-arrow right'>-</div>
 
             </div>
-            <Link  to={'/projects'} relative="path" className='main__btn'>все проекты</Link>
+            <Link  to={'/projects'} relative="path" className='main__btn' onClick={moveTo}>
+                все проекты</Link>
 
         </div>
     );

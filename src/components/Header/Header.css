@@ -8,6 +8,7 @@
     background-color: var(--main-gray-color);
     color: white;
     height: 70px;
+    /* width: 100%; */
     overflow: hidden;
 }
 
