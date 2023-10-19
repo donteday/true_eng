@@ -10,10 +10,10 @@ const Header = () => {
                     <img className="header__logo" src={require('../../img/logo_light.png')} alt="logo" srcset="" />
                 </NavLink>
                 <nav className="header__nav">
-                    <a href="/#services" className="header__nav-link" >Услуги</a>
+                    <Link to={'/services'} relative="path"className="header__nav-link" >Услуги</Link>
                     <Link to={'/projects'} relative="path" className="header__nav-link" >проекты</Link>
-                    <a className="header__nav-link" href="#">Новости</a>
-                    <Link to={'/contacts'} className="header__nav-link">Контакты</Link>
+                    <Link to={'/news'} relative="path" className="header__nav-link" >Новости</Link>
+                    <Link to={'/contacts'} relative="path" className="header__nav-link">Контакты</Link>
                 </nav>
                 <a href='https://t.me/true_engineers' className='header__tg' target='blank'> </a>
             </div>
