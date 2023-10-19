@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <Contacts/>,
       },
       {
-        path: "consult",
+        path: "services/:serviceId",
         element: <ServicesItem />,
       },
       {
