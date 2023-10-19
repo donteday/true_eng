@@ -1,19 +1,28 @@
 import { Link } from 'react-router-dom';
 import './ProjectsSlider.css';
 import { projectData } from "../../../data/ProjectsData";
+import { useRef } from 'react';
 
 // console.log(/^node .*react-scripts\/scripts\/start\.js\s?$/);
 const ProjectsSlider = () => {
     function moveTo() {window.scrollTo(0, 0)};
+    const sliderRef = useRef();
+
+    function arrowHandeler(e) {
+        e.target.className.includes('left') ?
+        sliderRef.current.scrollLeft-=475
+        : sliderRef.current.scrollLeft+=475;
+        // sliderRef.offsetLeft = 200;
+    }
 
     return (
         <div className='container projects'>
 
             <span className='projects__header'>Проекты<hr /></span>
             <div className='projects__slider'>
-                <div className='projects__slider-arrow left'>-</div>
+                <div className='projects__slider-arrow left' onClick={arrowHandeler}>&#10094;</div>
 
-                <div className='projects__box'>
+                <div className='projects__box' ref={sliderRef}>
                     {projectData.map((e, index) =>
                         <Link to={`/projects/${index}`} relative="path" className='projects__item'>
 
@@ -26,7 +35,7 @@ const ProjectsSlider = () => {
                     }
 
                 </div>
-                <div className='projects__slider-arrow right'>-</div>
+                <div className='projects__slider-arrow right' onClick={arrowHandeler}>&#10095;</div>
 
             </div>
             <Link  to={'/projects'} relative="path" className='main__btn' onClick={moveTo}>
