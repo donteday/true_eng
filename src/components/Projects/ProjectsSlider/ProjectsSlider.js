@@ -11,7 +11,7 @@ const ProjectsSlider = () => {
     function arrowHandeler(e) {
         e.target.className.includes('left') ?
         sliderRef.current.scrollLeft-=475
-        : sliderRef.current.scrollLeft+=475;
+        : sliderRef.current.scrollLeft=475;
         // sliderRef.offsetLeft = 200;
     }
 
