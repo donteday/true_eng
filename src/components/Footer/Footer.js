@@ -10,7 +10,7 @@ const Footer = () => {
                 <Link to={'/projects'} relative="path" reloadDocument>Проекты</Link>
                 <Link to={'/news'} relative="path" reloadDocument>Новости</Link>
                 <Link to={'/contacts'} relative="path" reloadDocument>Сотрудники</Link>
-                <Link to={'/confidencial'} relative="path" reloadDocument>Конфиденциальность</Link>
+                {/* <Link to={'/confidencial'} relative="path" reloadDocument>Конфиденциальность</Link> */}
             </div>
             <div className='footer__contacts'>
                 <h3>Контакты для связи:</h3>

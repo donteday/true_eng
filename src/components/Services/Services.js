@@ -28,9 +28,9 @@ const services = [
     },
 ]
 
-const Services = () => {
+const Services = ({page}) => {
     return (
-        <div className='services' id={'services'}>
+        <div className={page ? `services__page` : `services`} id={'services'}>
             <div className='container'>
             <span className='services__header'>УСЛУГИ<hr /></span>
 

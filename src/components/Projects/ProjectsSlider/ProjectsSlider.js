@@ -21,7 +21,7 @@ const ProjectsSlider = () => {
                 <div className='projects__slider-arrow left' onClick={arrowHandeler}>&#10094;</div>
                 <div className='projects__box' ref={sliderRef}>
                     {projectData.map((e, index) =>
-                        <Link to={`/projects/${index}`} relative="path" className='projects__item'>
+                        <Link to={`/projects/${index}`} relative="path" className='projects__item' reloadDocument>
                             <img className='projects__item-img' src={require(`../../../data/${e.id}/prew.jpg`)} alt="" />
                             <h3 to={`projects/${index}`} className='projects__item-name'>{e.name}</h3>
                             <p className='projects__item-title'>{e.title}</p>

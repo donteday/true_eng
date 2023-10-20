@@ -16,6 +16,8 @@ import Contacts from './components/Contacts/Contacts';
 import ProjectsSlider from './components/Projects/ProjectsSlider/ProjectsSlider';
 import ProjectPage from './components/Projects/ProjectPage/ProjectPage';
 import Projects from './components/Projects/Projects';
+import News from './components/News/News';
+import ServicesPage from './components/Services/ServicesPage/ServicesPage';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "contacts",
         element: <Contacts/>,
+      },
+      {
+        path: "services",
+        element: <ServicesPage/>,
+      },
+      {
+        path: "news",
+        element: <News/>,
       },
       {
         path: "services/:serviceId",
